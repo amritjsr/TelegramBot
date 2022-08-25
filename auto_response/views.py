@@ -8,11 +8,6 @@ def hello_world(request):
     if str(request.method).upper() == 'GET':
         return HttpResponse('<h2>GET Request .... Greetings from India !!!!!!!!</h2>')
     elif str(request.method).upper() == 'POST':
-        print(request.POST)
-        print(request.POST)
-        print(request.POST.items())
-        data = request.POST.items()
-        print(data)
-        for k in data:
-            print("k", str(k))
+        # print(request.POST)
+        print(request.body.decode('UTF-8'))
         return HttpResponse('<h2>POST Request Greetings from India !!!!!!!!</h2>')
