@@ -22,6 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-!-ex20wgtw)ccm)m^nw4ro8s)*jq2c)wzn=b4e-^#u-_sbg%+*'
 
+telegram_api_base_url = "https://api.telegram.org/bot"
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
